@@ -1,0 +1,130 @@
+h1{
+    color:rgb(248, 156, 171);
+    text-align:center;
+    }
+/* 
+RGB Color Example
+color: rgb(255, 0, 0);
+color: rgb(0, 255, 0);
+range is 0-255 for each color
+Hex (Hexadecimal)
+color: #FF0000; // Red
+color: #00FF00; // Green
+range is 00-FF for each color
+*/
+button{
+    color:black;
+    background-color:rgb(45, 156, 156);
+}
+body{
+    /* 
+    RGB STYLE:
+    background-color: purple; 
+    */
+    /* HEX STYLE: */
+    background-color: #FFFF00;
+}
+/*  TYPES OF SELECTORS
+1. Universal Selector
+  Applies styles to all elements
+  (every element on the page)
+  * { } 
+2. Element Selector 
+  h1 { }
+  Applies styles to all h1 elements
+ 3. Class Selector
+   .classname { }
+   Applies styles to all elements with the specified class
+   Example: <div class="classname"></div>
+4. ID Selector
+    #idname { }
+    Applies styles to a specific element with the given ID
+    Example: <div id="idname"></div>
+*/
+p{
+    text-align:end;
+    /* for text-align: end ,the text will start from right like in  urdu we write from right to left
+    and for text-align: start, the text will start from left like in english,hindi we write from left to right */
+}
+/* text-decoration : underline / overline / line-through 
+for underline the text will underline
+for overline there will be a line above the text
+and for line trough lets see practically below */
+h1{
+    text-decoration: line-through;
+}
+a{
+    text-decoration: none;
+    /* this will remove the underline from the link */
+}
+/* we can also change the style and color of text-decoration example below */
+h1{
+    text-decoration: red wavy underline;
+/* this will make the text-decoration red and wavy and underline */
+}  
+/* see the mdn website for extra knowledge */
+
+
+/* font-weight : normal / bold / bolder / lighter
+font-weight : 100-900 */
+#A1{
+    font-weight: lighter;
+}
+#A2{    
+    font-weight: 900;
+}
+#A3{
+    font-weight: 200;
+}
+#A4{
+    font-weight: bolder;
+}
+#one{
+    font-family:Arial;
+    /* you can see the difference in the font of this text of the two paragraphs
+    one is in arial font and the other is in default style */
+}
+/* 
+Absolute unit: pixels (px)
+Relative unit: em, rem, %, vw, vh
+96 pixels = 1 inch
+front-size:2px; // Absolute unit example
+*/
+#A5{
+    font-size: 25px;
+}
+/* line-height property
+line-height : 1.5; // Normal line height
+line-height : 3 // Triple line height
+line-height : 2px // Absolute unit
+line-height : 2 // double line height
+line-height : normal */
+#A6{
+    line-height: 10px;
+}
+#A7{
+    line-height: normal;
+}
+#A8{
+    line-height: 10;
+}
+/* text-tranform : uppercase / lowercase / capitalize / none */
+#A9{
+    text-transform: uppercase;
+    /* every letter is in capital */
+}
+#A10{
+    text-transform: lowercase;
+    /* every letter is in small */
+}
+#A11{
+    text-transform: capitalize;
+    /* every first letter of the word is in capital */
+}
+#A12{
+    text-transform: none;
+    /* no change in the text  i.e. default text */
+}
+#A13{
+    text-shadow: 2px 2px 4px rgb(242, 4, 4);
+}

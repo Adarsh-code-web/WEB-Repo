@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VID_8</title>
+</head>
+<body>
+    <div>
+        <h2>User Details (No CSS)</h2>
+        <form>
+
+            <!-- Name Field - Encased in a <div> -->
+            <div>
+                <label for="userName">Name:</label>
+                <!-- Input will follow on the same line if the label is inline, but the next <div> will start a new line. -->
+                <input type="text" id="userName" name="name" required>
+            </div>
+
+            <!-- City Field - Encased in a <div> -->
+            <div>
+                <label for="userCity">City:</label>
+                <input type="text" id="userCity" name="city" required>
+            </div>
+
+            <!-- Pincode Field - Encased in a <div> -->
+            <div>
+                <label for="userPincode">Pincode:</label>
+                <input type="text" id="userPincode" name="pincode" required pattern="\d{6}" title="Pincode must be 6 digits">
+            </div>
+
+            <!-- The button is also a block element if not styled, but it's typically best outside the field groups -->
+            <div>
+                <button type="submit">Submit Details</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
