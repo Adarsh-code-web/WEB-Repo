@@ -1,0 +1,23 @@
+p{
+    display: inline-block;
+    /* display: inline / block / inline-block / none */
+}
+#B1{
+    background-color: rgba(255,0,0,0.28);/*a value comes btw 0-1*/
+}
+#B2{
+    background-color: green;
+    /* display: none; it will remove the B2 and no space left*/
+    visibility: hidden; /* it will hide B2 but space will be left */
+}
+.B3{
+    background-color: rgba(255,0,0,1);/*a value comes btw 0-1*/
+}
+div{
+    height: 100px;
+    width: 100px;
+    padding: 25px;
+    margin:25px;
+    text-align: center;
+    display:inline-block;
+}

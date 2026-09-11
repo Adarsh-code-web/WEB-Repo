@@ -22,7 +22,8 @@ body{
     background-color: purple; 
     */
     /* HEX STYLE: */
-    background-color: #FFFF00;
+    background-color: #FFFF00;/*in this type(hex) 0-9 and a-f are there*/
+    background-color: rgb(191,34,115);
 }
 /*  TYPES OF SELECTORS
 1. Universal Selector
@@ -80,16 +81,14 @@ font-weight : 100-900 */
     font-weight: bolder;
 }
 #one{
-    font-family:Arial;
+    font-family:cursive;
     /* you can see the difference in the font of this text of the two paragraphs
-    one is in arial font and the other is in default style */
+    one is in cursive font and the other is in default style */
 }
 /* 
 Absolute unit: pixels (px)
 Relative unit: em, rem, %, vw, vh
-96 pixels = 1 inch
-front-size:2px; // Absolute unit example
-*/
+96 pixels = 1 inch */
 #A5{
     font-size: 25px;
 }
@@ -106,7 +105,7 @@ line-height : normal */
     line-height: normal;
 }
 #A8{
-    line-height: 10;
+    line-height: 3;
 }
 /* text-tranform : uppercase / lowercase / capitalize / none */
 #A9{

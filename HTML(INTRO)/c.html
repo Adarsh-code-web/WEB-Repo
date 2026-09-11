@@ -36,10 +36,13 @@
     </table>
 
     <table>
+        <thead>
         <tr>
             <th colspan="3">
                  Header </th>
         </tr>
+        </thead>
+        <tbody>
         <tr>
             <td>Data 1</td>
             <td>Data 2</td>
@@ -50,11 +53,12 @@
             <td>Data 5</td>
             <td>Data 6</td>
         </tr>
+        </tbody>
     </table>
 <br>
     <form><!--Forms are used to collect data from the user-->
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <input type="text" id="name" name="NAME" placeholder="Enter your name">
         <br>
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" placeholder="Enter your email">
@@ -65,17 +69,18 @@
         <input type="submit" value="Submit">
     </form>
 <br>
-    <form action="/action.php">
-        <input type="text" placeholder="type your name">
+    <form action="/JS/first.js">
+        Name: <input type="text" placeholder="type your name">
         <br>
-        <input type="password" placeholder="type your password">
+        Password: <input type="password" placeholder="type your password">
         <br>
 
         <input type="radio" value="class XI" name="class">class XI
         <br>
 <!--imp what is the diiference you can see after running it will show 'X' but value which it receive is of XI--> 
-       <input type="radio" value="class XI" name="class">class X
+       <input type="radio" value="class X" name="class">class X
         <br>
+        <!-- if in the name section of the 3 example have same name which is class so at a time we can select only one but if we give differnt name to all 3, like name=clas for 1st name=cgfg for 2nd and name=class for 3rd then we can select as many as we want i.e 1 or 2 or 3 items  -->
         <input type="radio" value="class XII" name="class">class XII
         <br><br><br>
 <!-- the only difference btw label and without label in this type=radio is that with label if you even click in class XI the class XI option will be selected but without label you must have to click in the circle to select the specific thing that you want to select-->
@@ -84,26 +89,26 @@
         </label>
         <br>
         <label for="102">
-            <input type="radio" value="class XI" name="class" id="102">class XI
+            <input type="radio" value="class XII" name="class" id="102">class XII
         </label>
 
         <br>
         <h4>Select your subject</h4>
         <label for="Maths">
-            <input type="checkbox" value="maths" name="subject" id="101">Maths
+            <input type="checkbox" value="maths" name="subject" id="Maths">Maths
         </label>
         <br>
         <label for="Bio">
-            <input type="checkbox" value="bio" name="subject" id="102">Bio
+            <input type="checkbox" value="bio" name="subject" id="Bio">Bio
         </label>
         <br>
 <!--the above comment like of this don't work in this case as here, type=checkbox-->
         <label for="Phy">
-            <input type="checkbox" value="phy" name="subject" id="103">Phy
+            <input type="checkbox" value="phy" name="subject" id="Phy">Phy
         </label>
         <br>
         <label for="Chem">
-            <input type="checkbox" value="chem" name="subject" id="104">Chem
+            <input type="checkbox" value="chem" name="subject" id="Chem">Chem
         </label>
         <br><br><br>
 
@@ -113,12 +118,16 @@
             <option value="Bangalore">Bangalore</option>
             <option value="Chennai">Chennai</option>
             <option value="Kolkata">Kolkata</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="Bhubaneswar">Bhubaneswar</option>
         </select>
 
         <br><br><br>
-        <textarea name="feedback" id="101" palceholder="please give your valuable feedback here" rows="5"> Feedback</textarea>
+        <textarea name="feedback" id="101" placeholder="please give your valuable feedback here" rows="5"> Feedback</textarea>
         <br><br>
-        <textarea name="feedback" id="101" palceholder="please give your valuable feedback here"></textarea>
+        <label for="feedback"></label>
+            <textarea name="feedback" id="feedback" placeholder="Please give your valuable feedback here"></textarea>
         <br>
         <input type="submit" value="Submit">
                 <br><br>
@@ -128,7 +137,7 @@
         <br><br>
         <!-- Sign In Button -->
         <button type="submit">Sign In</button>
-
+        <br><br>
         <!-- Sign Up Button -->
         <button type="submit">Sign Up</button>
         <br><br>
@@ -140,7 +149,7 @@
         <br><br>
 
         <!-- Sign In Button -->
-        <input type="submit" value="Sign In">
+        <input type="submit" value="Sign In"><!--value i.e. What text user sees  and type="submit means Makes it a submit action ,Browser sends form data to the URL specified in <form action="...">"  -->
         <!-- Sign Up Button -->
         <input type="submit" value="Sign Up">
         <br><br>
@@ -149,11 +158,12 @@
 
     </form>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/HcOc7P5BMi4?si=887kxNP0Jk86DbOm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"
-        <iframe width="560" height="315" src="https://en.wikipedia.org/wiki/Car"></iframe>
-
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HcOc7P5BMi4?si=p1wlWTtGcq_aXz0g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://en.wikipedia.org/wiki/Car"></iframe>
+    <iframe width="560" height="315" src="https://en.wikipedia.org/wiki/Bhubaneswar" title="About Bhubaneswar"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/IAvw60x0Kn4?si=kycO0yaGsI2Oey75" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <!-- <video src="https://www.youtube.com/embed/HcOc7P5BMi4?si=887kxNP0Jk86DbOm">HTML VIDEO</video> -->
-    <!--YouTube link inside <video> tag (Line 130)
+    <!--YouTube link inside <video> tag 
    Invalid usage: You cannot use a YouTube URL directly inside the <video> tag.
    The <video> tag works only with direct video file formats like .mp4, .webm, .ogg, etc.
     YouTube links require an <iframe> tag, not <video>  -->
@@ -163,6 +173,13 @@
 <!--use of loop is that after the completion of the video it restarts automatically-->
 
     <video width="560" height="315" src="htvid.mp4" controls autoplay>MyVideo</video>
+
+    <div id="id101" class="group1">
+        <p>This is a paragraph inside a div.</p>
+    </div>
+    <div id="id102" class="group1">
+        <p>This is another paragraph inside a div.</p>
+    </div>
 
 </body>
 </html> 

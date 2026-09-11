@@ -1,0 +1,67 @@
+*{
+    text-align: center;
+}
+div{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border: 2px solid black;
+}
+#container{
+    width: 80%;
+    height: 200px;
+    display: flex;
+    /* main axis and cross axis  are perpendicular to each other*/
+    /*flex-direction: row;/*its the default value , it arranges the items in a row ,main axis is horizontal(left to right)*/
+    /*flex-direction: row-reverse;/*it arranges the items in a row but in reverse order , main axis is horizontal (right to left)*/
+    /* the flex items will come under flex container , even they will change their size to be fit inside the flex container till a certain extent(till they reach their min-width and min-height) till their font size allow them to do so*/
+    /*flex-direction: column;/*it arranges the items in a column , main axis is vertical (top to bottom)*/
+    /*flex-direction: column-reverse;/*it arranges the items in a column but in reverse order , main axis is vertical (bottom to top)*/
+
+    /*justify-content: flex-start;/*it aligns the items at the start of the main axis*/
+    /*justify-content: flex-end;/*it aligns the items at the end of the main axis*/
+    /*justify-content: center;/*it aligns the items in the center of the main axis*/
+    /*justify-content: space-between;/*it aligns the items with equal space between them on the main axis(no gap between first item and start of main axis and last item and end of main axis)*/
+    /*justify-content: space-around;/*it aligns the items with equal space around them on the main axis(equal gap between first item and start of main axis and last item and end of main axis)*/
+    /*justify-content: space-evenly;/*it aligns the items with equal space evenly on the main axis(equal gap between first item and start of main axis and last item and end of main axis and also between the items)*/
+    /*(for justify-content to work properly , the width of the flex container should be more than the total width of all the flex items
+    and its for the horizontal alignment only)*/
+
+    /*flex-wrap: nowrap;/*its the default value , it places all the items in a single line*/
+    /*flex-wrap: wrap;/*it allows the items to wrap onto multiple lines, from top to bottom*/
+    /*flex-wrap: wrap-reverse;/*it allows the items to wrap onto multiple lines, from bottom to top*/
+    /*(for flex-wrap to work properly , the width of the flex container should be less than the total width of all the flex items)*/
+
+    /*align-items: flex-start;/*it aligns the items at the start of the cross axis*/
+    /*align-items: flex-end;/*it aligns the items at the end of the cross axis*/
+    /*align-items: center;/*it aligns the items in the center of the cross axis*/ 
+    /*align-items: stretch;/*it stretches the items to fill the flex container on the cross axis (default value)*/
+    /*(for align-items to work properly , the height of the flex container should be more than the height of the tallest flex item
+    and its for the vertical alignment only)*/
+
+    align-content: flex-start;/*it aligns the lines at the start of the cross axis*/
+    /*align-content: flex-end;/*it aligns the lines at the end of the cross axis*/
+    /*align-content: center;/*it aligns the lines in the center of the cross axis*/
+    /*align-content: space-between;/*it aligns the lines with equal space between them on the cross axis(no gap between first line and start of cross axis and last line and end of cross axis)*/
+    /*align-content: space-around;/*it aligns the lines with equal space around them on the cross axis(equal gap between first line and start of cross axis and last line and end of cross axis)*/
+    /*align-content: space-evenly;/*it aligns the lines with equal space evenly on the cross axis(equal gap between first line and start of cross axis and last line and end of cross axis and also between the lines)*/
+    /*(for align-content to work properly , the height of the flex container should be more than the total height of all the flex lines)*/  
+
+    /*To achive true centering, set both the justify-content and the align-items properties to center for the flex container,
+     and the flex item will be perfectly centered both horizontally and vertically:*/
+}
+#box1{
+    background-color: red;
+}
+#box2{
+    background-color: aqua;
+}
+#box3{
+    background-color: green;
+}
+#box4{
+    background-color: yellow;
+}
+#box5{
+    background-color: orange;
+}

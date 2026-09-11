@@ -1,0 +1,11 @@
+.box1{
+    width: 150px;
+    height: 150px;
+    background-image: url("../sunsetWithbeach.jpg");
+    background-size: cover;
+    position: relative;/*diiv will be in btw the 2 paragrah*/
+    position: absolute;/* it will overlap on top of other elements and it will move while srolling*/
+    position: fixed;/*it will overlap on top of other elements and will be fixed wrt viewport (it will fixed)*/
+    right:0;
+    top:20px;
+}

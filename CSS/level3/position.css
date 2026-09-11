@@ -1,0 +1,36 @@
+div{
+    padding: 0;
+    margin: 0;
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    display: inline-block;
+}
+#box1{
+    position: static; /* static is the default value for position property
+    (The top, right, bottom, left, and z-index properties have no effect) */
+    top:30px; /* top, bottom, left, right will not work in static position */
+}
+#box2{
+    position: relative; /* relative to its normal position */
+    /*element is relative to itself. (The top, right, bottom, left, and z-index will work)*/
+    top: 30px; /* will move 30px down(i.e. shift 30px from top ) from its original position */
+    left: 20px; /* will move 20px right(i.e.shift 20px from left) from its original position */
+}
+#box3{
+    position: absolute; /* absolute to its nearest positioned ancestor */
+    /* element is relative to the nearest positioned ancestor (i.e. relative, absolute, fixed, sticky) */
+    /*ancestor is the parent element(i.e. can be div if parent is div) or the parent of the parent element and so on(i.e. can be the div or body or browser) */
+    top: 30px; /* will move 30px down from the top of the nearest positioned ancestor */
+    left: 20px; /* will move 20px right from the left of the nearest positioned ancestor */
+}
+#box4{
+    position: fixed; /* fixed to the viewport */
+    /* element is relative to the browser window (The top, right, bottom, left, and z-index will work)*/
+    bottom: 0; /* will move 0px up from the bottom of the viewport */
+    width: 100vw; /* will cover the full width of the viewport */
+    left:0; /* will move 0px from the left of the viewport */
+}
+/*100vw ≠ full width of the page
+vw is viewport width, NOT page width.
+100vw includes the vertical scrollbar width*/

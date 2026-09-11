@@ -1,0 +1,16 @@
+body { font-family: Arial, sans-serif; padding: 20px; }
+h1, h2 { color: #333 }
+.demo { margin: 10px 0 20px; padding: 10px; border-radius: 6px; border: 1px solid #ddd; }
+.box { display: inline-block; padding: 6px 8px; margin: 5px; border-radius: 4px; background: #f4f6f8; border: 1px solid #d0d6db; }
+.block-parent { display: block; background: #fff8e6 }
+.inline-parent { display: inline; background: #e8f7ff }
+.parent-none { display: none; background: #ffefef }
+.parent-flex { display: flex; gap: 10px; background: #eef9f2 }
+.parent-contents { display: contents; background: #f7eefc }
+.parent-inline { display: inline; background: #f0f0ff }
+.child { min-width: 80px; }
+.child-inline { display: inline }
+.child-inherit { display: inherit; background: #fff0d9 }
+
+/* Visual helpers */
+.inline-parent .child, .parent-inline .child { border-style: dashed }

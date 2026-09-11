@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Display Property Demo</title>
+  <link rel="stylesheet" href="display_examples.css">
+</head>
+<body>
+  <h1>div vs span and display behavior</h1>
+
+  <section>
+    <h2>1. div (block) vs span (inline)</h2>
+    <div class="demo block-parent">Block parent (div)
+      <div class="box child">Child DIV (default block)</div>
+      <span class="box child">Child SPAN (inline)</span>
+    </div>
+
+    <span class="demo inline-parent">Inline parent (span)
+      <span class="box child">Child SPAN (inline)</span>
+      <div class="box child">Child DIV (block)</div>
+    </span>
+  </section>
+
+  <section>
+    <h2>2. Changing parent's display</h2>
+
+    <div class="demo parent-none">
+      Parent display:none (children hidden)
+      <div class="box child">Hidden child</div>
+    </div>
+
+    <div class="demo parent-flex">
+      Parent display:flex (children become flex items)
+      <div class="box child">Child 1</div>
+      <div class="box child">Child 2</div>
+      <div class="box child child-inline">Child 3 (display:inline)</div>
+    </div>
+
+    <div class="demo parent-contents">
+      Parent display:contents (parent not rendered but children are)
+      <div class="box child">Child 1</div>
+      <div class="box child">Child 2</div>
+    </div>
+
+    <div class="demo parent-inline">
+      Parent display:inline (children layout may still be block or inline)
+      <div class="box child">Child DIV (block)</div>
+      <span class="box child">Child SPAN (inline)</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>3. Using inherit</h2>
+    <div class="demo parent-flex inherit-demo">
+      Parent display:flex
+      <div class="box child child-inherit">Child w/ display:inherit</div>
+      <div class="box child">Child default</div>
+    </div>
+  </section>
+
+  <p>Open this file in a browser and use DevTools to toggle styles if you want to experiment further.</p>
+</body>
+</html>

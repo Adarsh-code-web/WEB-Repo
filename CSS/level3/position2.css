@@ -1,0 +1,48 @@
+*{
+    color: whitesmoke;
+}
+body{
+    background-image: url("../sunsetWithbeach.jpg");
+    background-size: cover;/*background-size : cover / contain / auto*/
+}
+div{
+    padding: 0;
+    margin: 0;
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    display: inline-block;
+    background-image: url("../car_img.jpg");
+    background-size: cover;
+}
+#box1{
+    position: static; 
+    top:30px;
+    background-image: url("../sunsetWithbeach.jpg");
+    background-size: cover;
+}
+#box2{
+    position: relative; 
+    top: -30px; 
+    right: -20px; 
+}
+#box3{
+    /* position: absolute; */
+    position: sticky;
+    /* sticky to its nearest scrollable ancestor */
+    z-index: -5;
+    /* display: block; */
+    top:50px;
+    bottom: 50px;
+    left: 400px; /*for working of left or right it will only work in display:block */
+}
+#box4{
+    position: fixed; 
+    top:0;
+}
+/*It decides the stack level of elements
+z-index : auto (0)
+z-index : 1 / 2 / ...
+z-index : -1 / -2 / ...
+Overlapping elements with a larger z-index cover those with a smaller one.
+In normal condition without z index, the later element in the HTML code will cover the previous one*/

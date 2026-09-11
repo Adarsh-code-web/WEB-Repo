@@ -1,0 +1,24 @@
+.myclass{
+    font-size: 20px;
+    background-color: #bf2273;
+}
+#box{
+    background-color: #2271bf;
+    padding: 20px;
+}
+.my1stcl{
+    font-size: 18px;
+    background-color: #f0f0f0;
+}
+h1{
+    height: 100px;
+    width: 350px;
+    background-color: turquoise;
+    border-width: 5px;
+    border-color: rgb(228, 10, 184);
+    border-style: dotted;
+    /* border-style: can be solid,dotted,dashed or more */
+    text-align: center;
+    border:3px dashed blue;
+    border-radius: 35px;
+}
